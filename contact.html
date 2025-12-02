@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contato - Pousada Rural Sítio Peruzzo</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#73cf17",
+            "background-light": "#fafcf8",
+            "background-dark": "#192111",
+            "text-light": "#141b0e",
+            "text-dark": "#e8f5e9",
+            "subtle-light": "#73974e",
+            "subtle-dark": "#a5d6a7",
+            "border-light": "#edf3e7",
+            "border-dark": "#2e3b2e"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <!-- TopNavBar -->
+    <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="mx-auto flex max-w-7xl items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 sm:px-6 lg:px-8 py-3">
+        <a href="index.html" class="flex items-center gap-4">
+          <div class="size-6 text-primary">
+            <!-- Espaço para o logo -->
+            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-lg font-bold tracking-[-0.015em] text-text-light dark:text-text-dark">Pousada Rural Sítio Peruzzo</h2>
+        </a>
+        <div class="hidden items-center gap-8 md:flex">
+          <nav class="flex items-center gap-9">
+            <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="index.html">Início</a>
+            <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="cabins.html">Chalés</a>
+            <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="activities.html">Atividades</a>
+            <a class="text-sm font-medium text-primary dark:text-primary" href="contact.html">Contato</a>
+          </nav>
+          <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold tracking-[0.015em] hover:bg-primary/90">
+            <span class="truncate">Reservar Agora</span>
+          </button>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+        <a class="block text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="index.html">Início</a>
+        <a class="block text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="cabins.html">Chalés</a>
+        <a class="block text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary" href="activities.html">Atividades</a>
+        <a class="block text-sm font-medium text-primary dark:text-primary" href="contact.html">Contato</a>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <!-- Contact Section -->
+      <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="text-center">
+            <h1 class="text-4xl font-black tracking-[-0.033em] text-text-light dark:text-text-dark sm:text-5xl">Entre em Contato</h1>
+            <h2 class="mt-4 max-w-2xl mx-auto text-base font-normal leading-normal text-subtle-light dark:text-subtle-dark">Tem alguma dúvida ou gostaria de fazer uma reserva? Fale conosco!</h2>
+        </div>
+        
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- Contact Form -->
+            <div class="w-full">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-text-light dark:text-text-dark">Nome</label>
+                        <div class="mt-1">
+                            <input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-md border-border-light dark:border-border-dark shadow-sm bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-text-light dark:text-text-dark">Email</label>
+                        <div class="mt-1">
+                            <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-border-light dark:border-border-dark shadow-sm bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-text-light dark:text-text-dark">Mensagem</label>
+                        <div class="mt-1">
+                            <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-border-light dark:border-border-dark shadow-sm bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-text-light bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Nossa Localização</h3>
+                    <p class="mt-2 text-subtle-light dark:text-subtle-dark">Venha nos visitar e desfrutar da tranquilidade do campo.</p>
+                    <div class="mt-4 space-y-2 text-subtle-light dark:text-subtle-dark">
+                        <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span>123 Nature Lane, Countryside</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Informações de Contato</h3>
+                    <p class="mt-2 text-subtle-light dark:text-subtle-dark">Estamos disponíveis para ajudar com sua reserva ou qualquer dúvida.</p>
+                     <ul class="mt-4 space-y-2 text-sm text-subtle-light dark:text-subtle-dark">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span>(123) 456-7890</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span>contact@sitioperuzzo.com</li>
+                    </ul>
+                </div>
+                 <div class="w-full h-64 rounded-lg bg-gray-300 dark:bg-gray-700 mt-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.351211753381!2d-51.2190283848833!3d-30.0411359818815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519777750a96e9b%3A0x6b2b622839b25e17!2sPorto%20Alegre%2C%20RS!5e0!3m2!1sen!2sbr!4v1620999000000!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                 </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark mt-auto">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="size-6 text-primary">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-lg font-bold tracking-[-0.015em] text-text-light dark:text-text-dark">Pousada Rural Sítio Peruzzo</h2>
+            </div>
+            <p class="text-sm text-subtle-light dark:text-subtle-dark max-w-sm">Seu refúgio rural perfeito. Relaxe, explore e crie memórias duradouras rodeado pela beleza da natureza.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-text-light dark:text-text-dark mb-4">Links Rápidos</h3>
+            <ul class="space-y-2">
+              <li><a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary" href="index.html">Início</a></li>
+              <li><a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary" href="cabins.html">Chalés</a></li>
+              <li><a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary" href="activities.html">Atividades</a></li>
+              <li><a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary" href="contact.html">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-text-light dark:text-text-dark mb-4">Contato</h3>
+            <ul class="space-y-2 text-sm text-subtle-light dark:text-subtle-dark">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span>123 Nature Lane, Countryside</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span>(123) 456-7890</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span>contact@sitioperuzzo.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-border-light dark:border-border-dark pt-8 text-center text-sm text-subtle-light dark:text-subtle-dark">
+          <p>© 2024 Pousada Rural Sítio Peruzzo. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
